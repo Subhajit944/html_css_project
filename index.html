@@ -3,53 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Website</title>
+    <title>Job Application From </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="pimg1">
-        <div class="ptext">
-            <span class="textBg"> Parallax Website</span>
-        </div>
-    </section>
-    <section class="section section_light">
-        <h2>Section One</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga distinctio minus iure quisquam totam quos magnam velit provident dolor nam? Distinctio minima eum quibusdam culpa tempora, libero beatae possimus recusandae.
-           Minima, numquam eligendi reprehenderit ab facilis earum nisi. Voluptatem laboriosam quaerat, quae fugit voluptates omnis reiciendis aperiam exercitationem cum sunt necessitatibus voluptatum? Quos magnam maiores ea a expedita quo eos.
-           Amet facere fugit at saepe sint perspiciatis molestias aliquam natus non. Molestiae eius voluptatem libero temporibus provident, a doloremque maxime porro perspiciatis voluptate? Consequuntur doloribus illum voluptatem, unde sed totam.
-        </p>
-    </section>
-
-    <section class="pimg2">
-        <div class="ptext">
-            <span class="textBg"> Explore Nature</span>
-        </div>
-    </section>
-    <section class="section section_dark">
-        <h2>Section Two</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga distinctio minus iure quisquam totam quos magnam velit provident dolor nam? Distinctio minima eum quibusdam culpa tempora, libero beatae possimus recusandae.
-        Minima, numquam eligendi reprehenderit ab facilis earum nisi. Voluptatem laboriosam quaerat, quae fugit voluptates omnis reiciendis aperiam exercitationem cum sunt necessitatibus voluptatum? Quos magnam maiores ea a expedita quo eos.
-        Amet facere fugit at saepe sint perspiciatis molestias aliquam natus non. Molestiae eius voluptatem libero temporibus provident, a doloremque maxime porro perspiciatis voluptate? Consequuntur doloribus illum voluptatem, unde sed totam.
-    </p>
-    </section>
-    <section class="pimg3">
-        <div class="ptext">
-            <span class="textBg">LOOK , DEEP INTU NATURE</span>
-        </div>
-    </section>
-    <section class="section section_dark">
-        <h2>Section Three</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga distinctio minus iure quisquam totam quos magnam velit provident dolor nam? Distinctio minima eum quibusdam culpa tempora, libero beatae possimus recusandae.
-        Minima, numquam eligendi reprehenderit ab facilis earum nisi. Voluptatem laboriosam quaerat, quae fugit voluptates omnis reiciendis aperiam exercitationem cum sunt necessitatibus voluptatum? Quos magnam maiores ea a expedita quo eos.
-        Amet facere fugit at saepe sint perspiciatis molestias aliquam natus non. Molestiae eius voluptatem libero temporibus provident, a doloremque maxime porro perspiciatis voluptate? Consequuntur doloribus illum voluptatem, unde sed totam.
-    </p>
-    </section>
-
-    <footer>
-     <p>PROJECT BY SUBHAJIT| 2025-copyright by @subhajit </p>
-     </footer>
-
     
+    <div class="container">
+        <div class="apply_box">
+            <h1> 
+                Job Application 
+                <span class="title_small">(Web)</span>
+            </h1>
+            <from action="">
+                <div class="from_container">
+                    <div class="from_control">
+                        <label for="first_name">First Name </label>
+                        <input 
+                        id="first_name"
+                        name="first_name"
+                        placeholder="Enter first name...."
+                        />
+                    </div>
+                    <div class="from_control">
+                        <label for="last_name"> Last name</label>
+                        <input 
+                         id="last_name"
+                        name="last_name"
+                        placeholder="Enter last name..."
+                        />
+                    </div>
+                    <div class="from_control">
+                        <label for="email"> Email</label>
+                        <input 
+                        type="email"
+                         id="email"
+                        name="email"
+                        placeholder="Enter Email id..."
+                        />
+                    </div>
+                    <div class="from_control">
+                        <label for="job_role">Job Role</label>
+                        <select id="job_role " name="Job_role">
+                            <option value="">Select Job Role</option>
+                            <option value=" frontend"> Drontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="full_stack">Full stack Developer</option>
+                            <option value=" ui_ux"> UI UX Designer</option>
+                        </select>
+                </div>
+                <div class="from_control">
+                <label for="address">Address</label>
+                <textarea 
+                id="address"
+                name="address"
+                row="4"
+                cols="50"
+                placeholder="Enter Address"
+                ></textarea>
+                </div>
+                <div class="from_control">
+                    <label for="city">City</label>
+                    <input
+                    id="city"
+                    name="city"
+                    placeholder="Enter City Name...."
+                    />
+                </div>
+                <div class="from_control">
+                    <label for="pincode">Pincode</label>
+                    <input
+                    type="number"
+                    id="pincode"
+                    name="pincode"
+                    placeholder="Enter Pincode...."
+                    />
+                </div>
+                <div class="from_control">
+                     <label for="date">Date</label>
+                     <input 
+                     value="2022-01-10" 
+                     type="date"
+                     id="date"
+                     name="date"
+                     />
+                     </div>
+                     <div class="from_control">
+                        <label for="uplode">Upload  Your CV</label>
+                        <input
+                        type="file"
+                        id="upload"
+                        name="upload"
+                        />
+                     </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit"> Apply Now</button>
+                </div>
 
-    </body>
+            </from>
+        </div>
+    </div>
+</body>
 </html>

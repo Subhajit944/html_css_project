@@ -1,73 +1,90 @@
-html,
-body {
-    height: 100%;
+*{
     margin: 0;
-    font-size: 16px;
-    font-family:"lato ", sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
-}
-
-.pimg1{
-    background-image: url(image/image1.png);
-    min-height: 100%; 
-}
-.pimg2{
-    background-image: url(image/image2.png);
-    min-height: 400px; 
-}
-.pimg3{
-    background-image: url(image/image3.png);
-    min-height: 400px; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-.pimg1,
-.pimg2, 
-.pimg3 {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
+    background-color: #ccc;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.textBg {
-    background-color: #313534;
-    color: #fff;
-    padding:20px;
-}
-
-.section {
-    padding: 50px 80px;
-    text-align: center;
-}
-.section_light {
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
     background-color: white;
-    color: #666;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba( 1,1,1,0.1);
+    border-radius: 10px;
+}
+
+.title_small{
+    font-size: 20px;
+}
+
+.from_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    gap: 20px;
+}
+
+.from_control {
+    display: flex;
+    flex-direction: column;
+}
+label  {
+    font-size: 15px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
 
 }
-.section_dark{
-    background-color: #282e34;
-    color: #ddd;
 
+button:hover {
+    background-color: #ccc;
+    border:  2px solid red;
+    color: black;
+    transition: .3s ease-out;
+    cursor: pointer;
 }
-.footer{
-  background-color: black;
-  padding: 15px 25px;
-  color: white;
-  text-align: center;
-  font-weight: 500;
-  font-size: 15px;
-}
+
+
+
+
+
+
+
+
+
+
